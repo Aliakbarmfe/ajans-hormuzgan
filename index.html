@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آژانس مسافرتی و گردشگری</title>
+    <title>آژانس مسافربری سخاوت</title>
     <style>
         * {
             box-sizing: border-box;
@@ -30,11 +30,12 @@
         .hero {
             position: relative;
             width: 100%;
-            height: 300px;
+            height: 320px;
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
             margin-bottom: 24px;
+            background-color: #e2e8f0;
         }
 
         .hero img {
@@ -48,7 +49,7 @@
             bottom: 0;
             right: 0;
             left: 0;
-            background: linear-gradient(transparent, rgba(15, 23, 42, 0.75));
+            background: linear-gradient(transparent, rgba(15, 23, 42, 0.85));
             color: #ffffff;
             padding: 20px;
             text-align: center;
@@ -56,10 +57,15 @@
 
         .hero-overlay h1 {
             font-size: 1.8rem;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
-        /* کارت معرفی و اطلاعات */
+        .hero-overlay p {
+            font-size: 1.1rem;
+            color: #f1f5f9;
+        }
+
+        /* کارت‌ها */
         .card {
             background-color: #ffffff;
             border-radius: 16px;
@@ -71,31 +77,60 @@
 
         .card h2 {
             color: #0284c7;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             font-size: 1.3rem;
             border-bottom: 2px solid #f1f5f9;
             padding-bottom: 8px;
         }
 
-        .contact-item {
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .address-box {
+            font-size: 1.1rem;
+            background-color: #f8fafc;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-right: 4px solid #0284c7;
+            margin-bottom: 10px;
         }
 
-        /* دکمه‌ها */
+        /* لیست شماره تلفن‌ها */
+        .phone-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .phone-item {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .phone-number {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #0f172a;
+            direction: ltr;
+        }
+
+        /* دکمه‌های تماس */
         .btn {
             display: inline-block;
             background-color: #f97316;
             color: #ffffff;
-            padding: 12px 24px;
-            border-radius: 8px;
+            padding: 6px 16px;
+            border-radius: 6px;
             text-decoration: none;
+            font-size: 0.9rem;
             font-weight: bold;
-            text-align: center;
-            margin-top: 10px;
             transition: background-color 0.3s ease;
+            width: 100%;
         }
 
         .btn:hover {
@@ -116,36 +151,49 @@
 <div class="container">
 
     <div class="hero">
-        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" alt="آژانس مسافرتی">
+        <img src="./1788290937456.jpg" alt="آژانس مسافربری سخاوت">
         <div class="hero-overlay">
-            <h1>آژانس مسافرتی جهان‌نما</h1>
-            <p>همراه شما در ثبت شیرین‌ترین خاطرات سفر</p>
+            <h1>آژانس مسافربری سخاوت</h1>
+            <p>درون شهر و بیرون شهر شبانه روزی</p>
         </div>
     </div>
 
     <div class="card">
-        <h2>درباره ما</h2>
-        <p>
-            آژانس مسافرتی جهان‌نما با بیش از ۱۰ سال سابقه در ارائه خدمات گردشگری، رزرو بلیط‌های داخلی و خارجی، اخذ ویزا و برگزاری تورهای اختصاصی آماده خدمت‌رسانی به شما عزیزان است. اولویت ما ارائه کیفیتی ممتاز و سفری بی‌دغدغه برای شماست.
-        </p>
+        <h2>📍 آدرس آژانس</h2>
+        <div class="address-box">
+            آژانس سخاوت حاجی آباد هرمزگان
+        </div>
     </div>
 
     <div class="card">
-        <h2>ارتباط با ما</h2>
-        <div class="contact-item">
-            <strong>📍 آدرس:</strong> تهران، خیابان ولیعصر، بالاتر از میدان ونک، پلاک ۱۲۳
+        <h2>📞 شماره‌های تماس و پشتیبانی</h2>
+        <div class="phone-list">
+            
+            <div class="phone-item">
+                <span class="phone-number">076-35425151</span>
+                <a href="tel:07635425151" class="btn">تماس تلفنی</a>
+            </div>
+
+            <div class="phone-item">
+                <span class="phone-number">076-35423636</span>
+                <a href="tel:07635423636" class="btn">تماس تلفنی</a>
+            </div>
+
+            <div class="phone-item">
+                <span class="phone-number">076-35423737</span>
+                <a href="tel:07635423737" class="btn">تماس تلفنی</a>
+            </div>
+
+            <div class="phone-item">
+                <span class="phone-number">09170969004</span>
+                <a href="tel:09170969004" class="btn">تماس مستقیم (همراه)</a>
+            </div>
+
         </div>
-        <div class="contact-item">
-            <strong>📞 تلفن تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸
-        </div>
-        <div class="contact-item">
-            <strong>📱 پشتیبانی واتس‌اپ:</strong> ۰۹۱۲۳۴۵۶۷۸۹
-        </div>
-        <a href="tel:02112345678" class="btn">تماس مستقیم با آژانس</a>
     </div>
 
     <footer>
-        © ۲۰۲۶ تمامی حقوق برای آژانس مسافرتی جهان‌نما محفوظ است.
+        © تمامی حقوق برای آژانس مسافربری سخاوت محفوظ است.
     </footer>
 
 </div>
