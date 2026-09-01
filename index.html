@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آژانس مسافرتی و گردشگری</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.8;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* بنر و عکس اصلی */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: linear-gradient(transparent, rgba(15, 23, 42, 0.75));
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero-overlay h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        /* کارت معرفی و اطلاعات */
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h2 {
+            color: #0284c7;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 8px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* دکمه‌ها */
+        .btn {
+            display: inline-block;
+            background-color: #f97316;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ea580c;
+        }
+
+        /* فوتر */
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" alt="آژانس مسافرتی">
+        <div class="hero-overlay">
+            <h1>آژانس مسافرتی جهان‌نما</h1>
+            <p>همراه شما در ثبت شیرین‌ترین خاطرات سفر</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>درباره ما</h2>
+        <p>
+            آژانس مسافرتی جهان‌نما با بیش از ۱۰ سال سابقه در ارائه خدمات گردشگری، رزرو بلیط‌های داخلی و خارجی، اخذ ویزا و برگزاری تورهای اختصاصی آماده خدمت‌رسانی به شما عزیزان است. اولویت ما ارائه کیفیتی ممتاز و سفری بی‌دغدغه برای شماست.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>ارتباط با ما</h2>
+        <div class="contact-item">
+            <strong>📍 آدرس:</strong> تهران، خیابان ولیعصر، بالاتر از میدان ونک، پلاک ۱۲۳
+        </div>
+        <div class="contact-item">
+            <strong>📞 تلفن تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸
+        </div>
+        <div class="contact-item">
+            <strong>📱 پشتیبانی واتس‌اپ:</strong> ۰۹۱۲۳۴۵۶۷۸۹
+        </div>
+        <a href="tel:02112345678" class="btn">تماس مستقیم با آژانس</a>
+    </div>
+
+    <footer>
+        © ۲۰۲۶ تمامی حقوق برای آژانس مسافرتی جهان‌نما محفوظ است.
+    </footer>
+
+</div>
+
+</body>
+</html>
